@@ -21,4 +21,5 @@ seasons_continents_plot = ggplot(data=seasons_continents,
   scale_x_discrete(limits=c("Spring","Summer","Autumn","Winter")) +
   labs(x="Season", y="Number of enrolments") +
   ggtitle("Number of enrolments in each season bewteen 2016/05/01 - 2018/05/01")
+  + scale_fill_discrete(name = "Continent")
 
