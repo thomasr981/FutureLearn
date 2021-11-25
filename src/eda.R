@@ -19,7 +19,7 @@ seasons_plot  = ggplot(data=seasons, aes(x=season, y = n)) +
         plot.title = element_text(hjust = 0.5)) +
   scale_x_discrete(limits=c("Spring","Summer","Autumn","Winter")) +
   labs(x="Season", y="Number of enrolments") +
-  ggtitle("Number of enrolments in each season bewteen 2016/05/01 - 2018/05/01")
+  ggtitle("Number of enrolments in each season 2016/05/01 - 2018/05/01")
 
 #### Cycle 3 ####
 # Plot enrolments in each month as a bar chart
@@ -41,7 +41,7 @@ seasons_continents_plot = ggplot(data=seasons_continents,
         plot.title = element_text(hjust = 0.5)) +
   scale_x_discrete(limits=c("Spring","Summer","Autumn","Winter")) +
   labs(x="Season", y="Number of enrolments") +
-  ggtitle("Number of enrolments in each season bewteen 2016/05/01 - 2018/05/01") +
+  ggtitle("Number of enrolments in each season 2016/05/01 - 2018/05/01") +
   scale_fill_discrete(name = "Continent")
 
 #### Cycle 4 ####
