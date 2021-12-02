@@ -1,7 +1,6 @@
 ---
 title: "CSC8631 Report"
 author: "Thomas Richardson"
-date: "05/11/2021"
 output: pdf_document
 ---
 
@@ -34,11 +33,11 @@ infrastructure so that these people feel more satisfied throughout.
 
 The first data mining goal for this investigation was to identify at which times
 throughout the year the course was most popular in an attempt to gain an
-understanding of why this may be the case and also allow for future planning so
+understanding of why this may be the case and allow for future planning so
 that increased support can be made available to the participants to help keep up
 with the increasing demand during these periods. In addition to this a 
 by-product of this investigation may enable FutureLearn to identify periods to 
-focus their advertising budget in an attempt to optimise their resources and
+focus their advertising budget, in an attempt to optimise their resources and
 potentially gain an advantage over their competition. If successful there will
 be clear recurring time period(s) of increased engagement that can be seen from
 the data.
@@ -47,19 +46,19 @@ A constraint to the investigation is that there was no data in
 regard to previous advertising of the course and how this may have affected 
 enrolments so for this reason it was assumed throughout that advertising had
 remained at a constant level spread evenly across all regions and mediums for 
-the entirety of the course's lifespan. In addition it was to be assumed that the
+the entirety of the course's lifespan. In addition, it was to be assumed that the
 course was available to enrol upon at moment throughout the course history.
 
 This project follows the CRISP-DM process model (Chapman et al., 2000) and all 
 data processing was completed in R, incorporating the package `ProjectTemplate`.
 Other R libraries used include `ggplot2` which was to be used to create plots 
 due to its flexibility in creating plots allowing for ease of use when layering
-and using position adjustment in plots, and also `dplyr` which was to be used to
-transform the data effectively.
+and using position adjustment in plots, and `dplyr` which was to be used to
+transform the data in an efficient manner.
 
 ## Data Understanding
-As previously mentioned the data collected was from the Newcastle University
-Cyber Security MOOC. It was collected over 7 consecutive runs of the course with
+As previously mentioned, the data collected was from the Newcastle University
+Cyber Security MOOC. It was collected over 7 consecutive runs of the course, with
 each run spanning a different length of time ranging from roughly two months in 
 duration to over sixth months. There were often slight changes made to the
 course between runs and there were also sometimes some data collection changes
@@ -73,14 +72,14 @@ date they completed the survey, and the archetype they were given based on their
 results.
 - **Enrolments:** This contained learner IDs, the date and time they enrolled,
 unenrolled, completed the course and purchased a certificate. It also contains
-information such as the individuals role on the course (e.g. learner), their age
-range, gender, country, highest education level, employment stauts and 
+information such as the individuals' roles on the course (e.g., learner), their age
+range, gender, country, highest education level, employment status and 
 employment area, and finally the country they were detected from.
 - **Leaving Survey Responses:** This contained learner IDs, the date and time
 they left the course as well as details on their last completed step, and a
 reason for leaving.
 - **Question Responses:** This contained learner IDs, information to identify 
-the question (e.g. question number), the type of question (e.g. multiple 
+the question (e.g., question number), the type of question (e.g., multiple 
 choice), the learners' answers and whether they answered correctly.
 - **Step Activity:** This contained learner IDs, and when they first visited and
 last completed each step.
@@ -90,9 +89,9 @@ as their team role and user role.
 including video length, views, percentage of viewers who reached different
 percentage lengths of the videos, the proportion of device types used to watch
 and the proportion of viewers per continent.
-- **Weekly Sentiment Survey Responses:** This contained feedback responses, 
-including the week they were submitting, an experience rating and a reason for 
-that rating.
+- **Weekly Sentiment Survey Responses:** This contained feedback responses 
+which consisted of the week they were submitted, an experience rating and a
+reason for that rating.
 
 Due to the differing lengths of each of the runs there were some runs with
 significantly less data than others and due to learners dropping out at various
@@ -109,7 +108,7 @@ As per the goals of this investigation it appeared that the most useful data
 would be found in the **Enrolment** files across all 7 of the runs as from this 
 it would be possible to investigate the number of learners enrolled since the
 course began and at which points in time the number of enrolments was at a 
-greater level that others.
+greater level than others.
 
 ## Data Preparation
 Following on from the data understanding the first act to performed on the data
@@ -131,7 +130,7 @@ this data to be plotted.
 A similar investigation could have been performed but instead using data only 
 from the learners who completed to course in order to gain an understanding of
 who may most suit this course at particular times however after a short 
-inspection it was clear the number of completion was not at a level high enough
+inspection it was clear the number of completions was not at a level high enough
 to infer any reliable conclusion and for this reason enrolments remained the
 focus.
 
@@ -145,15 +144,15 @@ months_plot
 
 ## Evaluation
 The bars in Figure 1 appeared to follow an undulating pattern
-with the highest number of enrolments to be in September 2016. There was also
-common lows in the months of April and May in 2017 and 2018. Finally, there was
+with the highest number of enrolments to be in September 2016. There were 
+common lows in the months of April and May in 2017 and 2018, and there were
 also a low number of enrolments in October and November 2016.
 
-In regard to the data mining goals, the knowledge that there exists periods of 
+In regard to the data mining goals, the knowledge that there exist periods of 
 time both when enrolments were high and when they were low, helped to reach 
 these goals however without further investigation it was difficult to make any 
 concrete assumptions. It is for this reason that progression towards the 
-business success criteria was also not at its most potential however these
+business success criteria was also not at its most potential however this
 result did leave opportunity for a directed second cycle of investigation.
 
 Focusing on the undulating pattern, this suggested that there may be a potential
@@ -161,7 +160,7 @@ seasonal pattern to the enrolment numbers and therefore this was to be
 investigated in the succeeding cycle. In addition to this the fact that there
 were dipping in enrolment numbers in the same months of consecutive year
 suggests this pattern may align with global seasonal change for example, the
-Earth's seasons.
+UK's seasons.
 
 # Cycle 2
 ## Business Understanding
@@ -174,23 +173,23 @@ idea on why this pattern may have been occurring.
 The data mining goals for this cycle carried some of the key themes from the 
 previous cycle, although more concise as the goals were now to identify if the
 rise and fall of enrolment numbers aligned with that of the changing of the
-Earth's seasons. In order to investigate this an additional assumption had to be
-made. This assumption was that the Earth's seasons changed around the time of
+UK's seasons. In order to investigate this an additional assumption had to be
+made. This assumption was that the UK's seasons changed around the time of
 the equinoxes and solstices. That is to say that every year, at the spring
-equinox(20<sup>th</sup> March) the season changes from winter to spring, at the 
+equinox (20<sup>th</sup> March) the season changes from winter to spring, at the 
 summer solstice (21<sup>st</sup> June) the season changes from spring to summer,
 at the autumn equinox (22<sup>nd</sup> September) the season changes from summer
 to autumn, and at the winter solstice (21<sup>st</sup> December) the season
 changes from autumn to winter. The success of this data mining would be judged
 by the ability to form sound conclusions about whether the pattern of enrolment
-numbers aligns or does not align with that of the Earth's seasons.
+numbers aligns or does not align with that of the UK's seasons.
 
 ## Data Understanding
 The data did not already have the seasons allocated to the enrolment, however
 as the enrolments were dated this was possible to assign during the data 
 preparation. In addition, the data did not span across an exact whole number of
 years and so in order to maintain a consistent number of each season across the
-investigation a two year window was selected (1<sup>st</sup> May 2016 - 
+investigation a two-year window was selected (1<sup>st</sup> May 2016 - 
 1<sup>st</sup> May 2018). This was the largest number of whole years that could
 be extracted from the data and so was chosen to increase reliability.
 
@@ -204,7 +203,7 @@ date and returns the season based on the previously mentioned equinoxes and
 solstices. This function can be found in helpers.R file in the lib folder.
 
 Next, a new data frame was created by filtering the enrolments from the larger 
-original data frame to those that fell in the selected two year time period, and
+original data frame to those that fell in the selected two-year time period, and
 then grouping the enrolments by season and performing a count on the numbers in
 each season.
 
@@ -258,7 +257,7 @@ the different seasons at the roughly the same time.
 While the data did not directly specify in which continent each learner was 
 located, there was a column that listed a detected country in the form of an
 ISO 3166-1 alpha-2 code. Using this a continent was assigned to the individual
-during the data preparation. In some instances there was no detected country
+during the data preparation. In some instances, there was no detected country
 and so these individuals will have an "NA" in their continent column. It is
 also assumed for this investigation that all detected countries are correct,
 however there is an understanding that some learners may be completing the
@@ -279,8 +278,8 @@ seen in the eda.R file in the src folder.
 months_continents_plot
 ```
 Next, similar to the data preparation in the second cycle, a new data frame was
-created by filtering the enrolements from the larger enrolments data frame to
-those that fell in the selected two year time period, except this time the
+created by filtering the enrolments from the larger enrolments data frame to
+those that fell in the selected two-year time period, except this time the
 individuals were also assigned a continent. The learners were then grouped by
 the season they enrolled and the continent from which they were detected. A
 count was performed for each group. This was then plotted to give the stacked
@@ -289,7 +288,7 @@ bar chart in Figure 4.
 seasons_continents_plot
 ```
 Finally, a data frame was made for each season by filtering the larger 
-enrolments data frame to enrolments that fell in the two year period and that
+enrolments data frame to enrolments that fell in the two-year period and that
 that were part of the specified season. These were then assigned a continent
 which they were then grouped by and a count for each was performed. These four
 data frames were then plotted as the pie charts seen in Figure 5 with the 
@@ -305,7 +304,7 @@ Looking at Figures 3, 4 and 5 it was clear to see that the largest proportion of
 learners were situated in Europe (green), followed by Asia (yellow). From this
 it was suggested that it could be useful to employ staff that are able to speak
 languages commonly spoken in these areas of the Earth for example English,
-Mandarin and Hindi in order to accommodate for the large number of students from
+Mandarin and Hindi to accommodate for the large number of students from
 these areas. Focusing on Figure 5, comparing the percentages between the seasons
 it could be seen that the proportion of learners from Asia was highest in
 summer (25.87%) and lowest in spring (17.55%) so it could be suggested that
@@ -316,7 +315,7 @@ proportion of individuals from Africa is largest during the autumn periods
 during autumn periods to employ some staff who speak languages commonly spoken 
 in Africa such as Arabic. These changes were suggested with the intention of
 making the learners more comfortable on the course and potentially enable them 
-the opportunity to ask questions in their native languages. Also if people knew
+the opportunity to ask questions in their native languages. Also, if people knew
 they were to have this support on the course they may be more inclined to sign 
 up to a FutureLearn course and hence increase the number of enrolments. Making
 students feel more comfortable and increasing enrolments both fall in line with
@@ -327,10 +326,12 @@ up which would potentially both increase the number of enrolments, giving them
 a larger share of the market and also increase the efficiency of their 
 advertising budget, in turn possibly saving them money.
 
+While from these results and the current data, it is possible to determine the times when particular areas take up a larger share of enrolemnts, it is still not feasible to give an exact explanation as to why this may be the case. FutureLearn may want to investigate this more in future analysis however they will still be able to make educated decisions based on finding from this analysis.
+
 Some final limitations of this investigation are that data from only one course
 was used so results are limited as the observations from this project may be 
-different for other courses, and also the length of time over which data was 
-collected may not be long enough to accurately predict trends. To combat this
+different for other courses, and the length of time over which data was 
+collected may not be long enough to accurately predict the seasonal trends. To combat this
 in future, data collected from multiple courses over a longer period of time may
 be used. Finally, as a recommendation for additional cycles to this project it
 might be useful to investigate which individual countries have the largest
