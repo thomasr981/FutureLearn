@@ -44,7 +44,6 @@ seasons_continents_plot = ggplot(data=seasons_continents,
   ggtitle("Number of enrolments in each season 2016/05/01 - 2018/05/01") +
   scale_fill_discrete(name = "Continent")
 
-#### Cycle 4 ####
 # Continental enrolment proportions in Spring
 spring_pie = ggplot(spring, aes(x="", y=n, fill=continent))+
   geom_bar(width = 1, stat = "identity")+
