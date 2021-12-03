@@ -326,7 +326,7 @@ up which would potentially both increase the number of enrolments, giving them
 a larger share of the market and also increase the efficiency of their 
 advertising budget, in turn possibly saving them money.
 
-While from these results and the current data, it is possible to determine the times when particular areas take up a larger share of enrolemnts, it is still not feasible to give an exact explanation as to why this may be the case. FutureLearn may want to investigate this more in future analysis however they will still be able to make educated decisions based on finding from this analysis.
+While from these results and the current data, it is possible to determine the times when particular areas take up a larger share of enrolemnts, it is still not feasible to give an exact explanation as to why this may be the case. FutureLearn may want to investigate this more in future analysis however they will still be able to make educated decisions based on the findings from this analysis.
 
 Some final limitations of this investigation are that data from only one course
 was used so results are limited as the observations from this project may be 
